@@ -1,0 +1,216 @@
+@import "../../Styles/_helpers.scss";
+
+.footer {
+    width: 100%;
+    margin-top: 160px;
+    background: $blackNum;
+    padding: 0px 20px;
+    padding-top: 43px;
+    padding-bottom: 19px;
+
+    .wrapper {
+        max-width: $wrapperSize;
+        width: 100%;
+        margin: 0 auto;
+
+        .top {
+            min-width: 100%;
+            padding-bottom: 58.56px;
+            border-bottom: 1px solid $gray;
+
+            .content {
+                min-width: 100%;
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+
+                .info {
+                    display: flex;
+                    gap: 110px;
+                    align-items: flex-start;
+
+                    a {
+                        text-decoration: none;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 100.836%;
+                        color: $white;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+
+                    .name {
+                        color: $white;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 150%;
+
+                        span {
+                            color: $gray;
+                        }
+                    }
+
+                    .contacts {
+
+                        a {
+                            display: block;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                            color: $white;
+                            margin-bottom: 24px;
+                        }
+
+                        .social {
+                            display: flex;
+                            gap: 12px;
+                            margin: 0;
+
+                            a {
+                                margin: 0;
+                                width: 28px;
+                                height: 28px;
+                                position: relative;
+                                transform: scale(1);
+                                transition: all .1s ease;
+
+                                &:hover {
+                                    transform: scale(1.2);
+                                    transition: all .1s ease;
+                                }
+
+                                img {
+                                    position: absolute;
+                                    left: 0;
+                                    top: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .call {
+                    display: flex;
+                    gap: 16px;
+                    padding: 0;
+                    margin: 0;
+                    align-items: center;
+                    justify-content: flex-end;
+
+                    .text {
+                        flex: 0 0 223px;
+                        text-align: center;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 150%;
+                        color: $gray;
+                    }
+
+                    .link {
+                        font-family: $inter;
+                        font-size: 14px;
+                        text-align: center;
+                        color: $blackNum;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        border-radius: 73px;
+                        background: $white;
+                        padding: 12px 22px;
+                        transition: all .2s ease;
+
+                        &:hover {
+                            background: darken($white, 10);
+                            transition: all .2s ease;
+                        }
+                    }
+                }
+            }
+
+            .pays {
+                margin-top: 36px;
+                display: flex;
+                min-width: 100%;
+                align-items: flex-start;
+                justify-content: flex-end;
+                gap: 10px;
+
+                img {
+                    width: 33px;
+                    height: 20px;
+                    object-fit: contain;
+                }
+            }
+
+        }
+
+        .bottom {
+            margin-top: 19px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .copy {
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+                color: #D2D2D2;
+            }
+
+            .links {
+                display: flex;
+                gap: 32px;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+                color: $white;
+
+                a {
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+            }
+
+            .design {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+
+                .text {
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%;
+                    color: #D2D2D2;
+                }
+
+                img {
+                    width: 65px;
+                    height: 27px;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+
+    img {
+        width: 30px;
+        height: 30px;
+    }
+}

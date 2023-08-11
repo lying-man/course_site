@@ -1,0 +1,88 @@
+@import "../../Styles/_helpers.scss";
+
+.wrapper {
+    max-width: $wrapperSize;
+    width: 100%;
+    border-radius: 10px;
+    background: $white;
+    padding: 64px 80px;
+    padding-bottom: 173px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 32px;
+
+    .content {
+
+        .title {
+            max-width: 580px;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 110%;
+            color: $blackNum;
+            margin-bottom: 24px;
+        }
+
+        .text {
+            max-width: 771px;
+            text-align: center;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            color: $gray;
+            margin-bottom: 106px;
+        }
+
+        .link {
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            text-align: center;
+            color: $white;
+            padding: 18px 24px;
+            border-radius: 84px;
+            background: $blackNum;
+            transition: all .2s ease;
+
+            &:hover {
+                background: lighten($blackNum, 20);
+                transition: all .2s ease;
+            }
+        }
+    }
+
+    .image {
+        position: absolute;
+        width: 970px;
+        height: 520px;
+        right: 0;
+        bottom: 0px;
+        pointer-events: none;
+        touch-action: none;
+        user-select: none;
+    }
+
+    .line {
+        display: flex;
+        position: absolute;
+        gap: 48px;
+        left: -28px;
+        bottom: 42px;
+
+        .outline {
+            text-shadow: 1px 0 $gray, 0 -1px $gray, -1px 0 $gray, 0 1px $gray;
+            pointer-events: none;
+            font-size: 96px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            color: $white;
+            touch-action: none;
+            user-select: none;
+            text-transform: uppercase;
+        }
+    }
+}
