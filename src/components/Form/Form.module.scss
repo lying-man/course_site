@@ -1,59 +1,66 @@
 @import "../../Styles/_helpers.scss";
 
+.offset {
+    height: 130.84px;
+    width: 100%;
+    pointer-events: none;
+    background: transparent;
+}
+
 .wrapper {
     margin: 0 auto;
-    margin-top: 160px;
     border: 1px solid #F5F5F5;
     background: $white;
-    border-radius: 10px;
+    border-radius: 7.143px;
+    border: 0.714px solid #F5F5F5;
     overflow: hidden;
     max-width: $wrapperSize;
     width: 100%;
-    padding: 64px 80px;
+    padding: 45.71px 57.14px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 
     .price {
-        flex: 0 1 691px;
+        flex: 0 1 494px;
         overflow: hidden;
 
         .title {
-            font-size: 50px;
+            font-size: 35.714px;
             font-style: normal;
             font-weight: 500;
             line-height: 100.5%;
             color: $blackNum;
-            margin-bottom: 64px;
+            margin-bottom: 45.71px;
         }
 
         .content {
             position: relative;
-            padding: 32px 48px;
+            padding: 22.86px 34.29px;
             width: 100%;
-            border-radius: 10px;
+            border-radius: 7.143px;
             overflow: hidden;
 
             .title {
                 position: relative;
                 z-index: 1;
                 color: $white;
-                font-size: 30px;
+                font-size: 22px;
                 font-style: normal;
                 font-weight: 500;
                 line-height: 100%;
-                margin-bottom: 32px;
+                margin-bottom: 22.86px;
             }
 
             .price {
                 position: relative;
                 z-index: 1;
                 color: $white;
-                font-size: 48px;
+                font-size: 34.286px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 100.5%;
-                margin-bottom: 157px;
+                margin-bottom: 148px;
             }
 
             .footer {
@@ -61,17 +68,17 @@
                 z-index: 1;
                 color: $white;
                 display: flex;
-                gap: 12px;
+                gap: 8.57px;
                 align-items: center;
 
                 img {
                     position: static;
-                    width: 24px;
-                    height: 24px;
+                    width: 17px;
+                    height: 17px;
                 }
 
                 .text {
-                    font-size: 18px;
+                    font-size: 16px;
                     font-style: normal;
                     font-weight: 400;
                     line-height: 140%;
@@ -114,11 +121,11 @@
     }
 
     .form {
-        flex: 0 1 691px;
+        flex: 0 1 494px;
 
         .title {
-            margin-bottom: 64px;
-            font-size: 50px;
+            margin-bottom: 45.71px;
+            font-size: 35.714px;
             font-style: normal;
             font-weight: 500;
             line-height: 100.5%;
@@ -130,7 +137,7 @@
             position: relative;
 
             &:not(:last-of-type) {
-                margin-bottom: 16px;
+                margin-bottom: 12px;
             }
 
             &.active {
@@ -153,8 +160,8 @@
                 font-weight: 400;
                 line-height: 140%;
                 color: $gray;
-                left: 18px;
-                top: 24px;
+                left: 11.43px;
+                top: 16.43px;
 
                 span {
                     color: #FF3636;
@@ -165,7 +172,7 @@
                 border: none;
                 outline: none;
                 min-width: 100%;
-                border-radius: 10px;
+                border-radius: 7.143px;
                 background: #F5F5F5;
                 font-size: 18px;
                 font-style: normal;
@@ -173,7 +180,7 @@
                 line-height: 140%;
                 color: $blackNum;
                 border: 1px solid #F5F5F5;
-                padding: 23px 16px;
+                padding: 16.43px 11.43px;
                 transition: all .2s ease;
 
                 &:focus {
@@ -185,9 +192,9 @@
 
         .check {
             display: flex;
-            align-items: center;
-            gap: 16px;
-            margin: 32px 0px;
+            align-items: flex-start;
+            gap: 11.43px;
+            margin: 22.86px 0px;
 
             .wrapper {
                 margin: 0;
@@ -230,7 +237,7 @@
 
             .text {
                 color: $blackNum;
-                font-size: 18px;
+                font-size: 16px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 140%;
@@ -249,12 +256,12 @@
             display: block;
             background: $blackNum;
             text-align: center;
-            font-size: 20px;
+            font-size: 16px;
             font-style: normal;
             font-weight: 500;
             line-height: normal;
             color: $white;
-            padding: 18px 0px;
+            padding: 13px 10px;
             border: none;
             transition: all .2s ease;
 

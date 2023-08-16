@@ -47,27 +47,30 @@ export default function Questions() {
     const [activeSpoiler, setActiveSpoiler] = useState(null);
 
     return (
-        <div className={cl.wraper}>
-            <div className={cl.title}>Вопросы и ответы</div>
-            <div className={cl.spoilers}>
-                {
-                    dataQuestions.current.list.map((data, index) => {
-                        return <QuestionItem 
-                            key={index}
-                            index={index} 
-                            title={data.title} 
-                            text={data.text} 
-                            setActiveSpoiler={setActiveSpoiler}
-                            isOpen={ index === activeSpoiler ? true : false }
-                            activeSpoiler={activeSpoiler}
-                        />
-                    })
-                }
+        <React.Fragment>
+            <div className={cl.offset} id="faq"></div>
+            <div className={cl.wraper}>
+                <div className={cl.title}>Вопросы и ответы</div>
+                <div className={cl.spoilers}>
+                    {
+                        dataQuestions.current.list.map((data, index) => {
+                            return <QuestionItem 
+                                key={index}
+                                index={index} 
+                                title={data.title} 
+                                text={data.text} 
+                                setActiveSpoiler={setActiveSpoiler}
+                                isOpen={ index === activeSpoiler ? true : false }
+                                activeSpoiler={activeSpoiler}
+                            />
+                        })
+                    }
+                </div>
+                <div className={cl.action}>
+                    <div className={cl.title}>Не нашли ответа на свой вопрос?</div>
+                    <button className={cl.btn}>Задать свой вопрос</button>
+                </div>
             </div>
-            <div className={cl.action}>
-                <div className={cl.title}>Не нашли ответа на свой вопрос?</div>
-                <button className={cl.btn}>Задать свой вопрос</button>
-            </div>
-        </div>
+        </React.Fragment>
     )
 }

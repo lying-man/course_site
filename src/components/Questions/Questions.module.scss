@@ -1,16 +1,22 @@
 @import "../../Styles/_helpers.scss";
 
+.offset {
+    height: 149.57px;
+    width: 100%;
+    pointer-events: none;
+    background: transparent;
+}
+
 .wraper {
-    max-width: 1520px;
+    max-width: $wrapperSize;
     width: 100%;
     margin: 0 auto;
-    margin-top: 178px;
 
     .title {
-        margin-bottom: 104.5px;
+        margin-bottom: 82.53px;
         text-align: center;
         color: $blackNum;
-        font-size: 50px;
+        font-size: 39.474px;
         font-style: normal;
         font-weight: 500;
         line-height: 110%;
@@ -18,16 +24,12 @@
 
     .spoilers {
         width: 100%;
-        margin-bottom: 64px;
-        padding: 0px 32px;
+        margin-bottom: 50.53px;
+        padding: 0px 25.26px;
 
         .item {
             width: 100%;
             border-bottom: 1px solid #D2D2D2;
-
-            &:not(:last-child) {
-                margin-bottom: 40px;
-            }
 
             .content {
                 min-width: 100%;
@@ -36,11 +38,11 @@
                 border: none;
                 justify-content: space-between;
                 align-items: flex-start;
-                padding-bottom: 32.5px;
+                padding: 31px 0px;
 
                 .title {
                     color: $blackNum;
-                    font-size: 30px;
+                    font-size: 22px;
                     font-style: normal;
                     font-weight: 500;
                     line-height: 110%;
@@ -48,8 +50,8 @@
                 }
 
                 .img {
-                    width: 34px;
-                    height: 34px;
+                    width: 26px;
+                    height: 26px;
                     border-radius: 50%;
                     background: $white;
                     display: flex;
@@ -65,17 +67,17 @@
                     }
 
                     img {
-                        width: 26px;
-                        height: 26px;
+                        width: 18px;
+                        height: 18px;
                     }
                 }
 
             }
 
             .text {
-                max-width: 1150px;
+                max-width: 1070px;
                 width: 100%;
-                font-size: 20px;
+                font-size: 18px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 140%;
@@ -100,7 +102,7 @@
 
         .title {
             text-align: center;
-            margin-bottom: 24px;
+            margin-bottom: 18px;
             font-size: 20px;
             font-style: normal;
             font-weight: 400;
@@ -109,15 +111,15 @@
         }
 
         .btn {
-            padding: 18px 24px;
+            padding: 14px 18px;
             background: $blackNum;
             text-align: center;
-            font-size: 20px;
+            font-size: 18px;
             font-style: normal;
             font-weight: 500;
             line-height: normal;
             color: $white;
-            border-radius: 84px;
+            border-radius: 66.316px;
             border: none;
             transition: all .2s ease;
 

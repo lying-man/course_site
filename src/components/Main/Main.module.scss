@@ -3,47 +3,47 @@
 .wrapper {
     max-width: $wrapperSize;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 7.143px;
     background: $white;
-    padding: 64px 80px;
-    padding-bottom: 173px;
+    padding: 45px 57px;
+    padding-bottom: 123.71px;
     overflow: hidden;
     position: relative;
     margin: 0 auto;
-    margin-top: 32px;
+    margin-top: 47px;
 
     .content {
 
         .title {
-            max-width: 580px;
-            font-size: 48px;
+            max-width: 400px;
+            font-size: 34.286px;
             font-style: normal;
             font-weight: 600;
             line-height: 110%;
             color: $blackNum;
-            margin-bottom: 24px;
+            margin-bottom: 17px;
         }
 
         .text {
-            max-width: 771px;
+            max-width: 488px;
             text-align: center;
             font-size: 18px;
             font-style: normal;
             font-weight: 400;
             line-height: normal;
             color: $gray;
-            margin-bottom: 106px;
+            margin-bottom: 75.43px;
         }
 
         .link {
-            font-size: 20px;
+            font-size: 16px;
             font-style: normal;
             font-weight: 500;
             line-height: normal;
             text-align: center;
             color: $white;
-            padding: 18px 24px;
-            border-radius: 84px;
+            padding: 13px 17px;
+            border-radius: 60px;
             background: $blackNum;
             transition: all .2s ease;
 
@@ -56,9 +56,10 @@
 
     .image {
         position: absolute;
-        width: 970px;
-        height: 520px;
-        right: 0;
+        width: 684.785px;
+        height: 370.571px;
+        flex-shrink: 0;
+        right: 0px;
         bottom: 0px;
         pointer-events: none;
         touch-action: none;
@@ -68,14 +69,14 @@
     .line {
         display: flex;
         position: absolute;
-        gap: 48px;
-        left: -28px;
-        bottom: 42px;
+        gap: 34.29px;
+        left: -20px;
+        bottom: 30.14px;
 
         .outline {
             text-shadow: 1px 0 $gray, 0 -1px $gray, -1px 0 $gray, 0 1px $gray;
             pointer-events: none;
-            font-size: 96px;
+            font-size: 68.571px;
             font-style: normal;
             font-weight: 400;
             line-height: normal;

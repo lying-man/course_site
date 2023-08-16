@@ -35,28 +35,31 @@ export default function Course() {
     });
 
     return (
-        <div className={cl.wrapper}>
-            <div className={cl.title}>Из чего состоит курс</div>
-            <div className={cl.wrapperContent}>
-                <div className={cl.steps}>
-                    { 
-                        data.current.list.map((data, index) => {
-                            return <CourseItem key={index} title={data.title} itemList={data.itemList} number={index + 1} /> 
-                        })
-                    }
-                </div>
-                <div className={cl.container}>
-                    <img src={PcFour} alt="computer" className={cl.computer} />
-                    <iframe 
-                        className={cl.screen}
-                        src="https://www.youtube.com/embed/HBqReN6gfhc" 
-                        title="YouTube video player" 
-                        frameBorder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        allowfullScreen>
-                    </iframe>
+        <React.Fragment>
+            <div className={cl.offset} id="plan"></div>
+            <div className={cl.wrapper}>
+                <div className={cl.title}>Из чего состоит курс</div>
+                <div className={cl.wrapperContent}>
+                    <div className={cl.steps}>
+                        { 
+                            data.current.list.map((data, index) => {
+                                return <CourseItem key={index} title={data.title} itemList={data.itemList} number={index + 1} /> 
+                            })
+                        }
+                    </div>
+                    <div className={cl.container}>
+                        <img src={PcFour} alt="computer" className={cl.computer} />
+                        <iframe 
+                            className={cl.screen}
+                            src="https://www.youtube.com/embed/HBqReN6gfhc" 
+                            title="YouTube video player" 
+                            frameBorder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullScreen>
+                        </iframe>
+                    </div>
                 </div>
             </div>
-        </div>
+        </React.Fragment>
     )
 }
