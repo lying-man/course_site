@@ -13,7 +13,7 @@ services:
       - proxy
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.divinecourse-fe.rule=Host(`dev.divinecourse.ru`)"
+      - "traefik.http.routers.divinecourse-fe.rule=Host(`divinecourse.ru`)"
       - "traefik.http.routers.divinecourse-fe.entrypoints=http"
       - "traefik.http.services.divinecourse-fe.loadbalancer.server.port=3000"
 
