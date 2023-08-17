@@ -5,10 +5,10 @@
 # This workflow will build a Java project with Gradle and cache/restore any dependencies to improve the workflow execution time
 # For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-gradle
 
-name: Deploy to vps
+name: Deploy to vps (prod)
 
 on:
-  pull_request:
+  push:
     branches:
       - "main"
 
@@ -22,9 +22,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-  dev_deploy:
+  deploy:
     needs: [build]
     runs-on: self-hosted
     steps:
       - name: docker-compose
-        run: docker-compose -f dev-docker-compose.yml up --build -d
+        run: docker-compose -f docker-compose.yml up --build -d
