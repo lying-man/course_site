@@ -31,7 +31,7 @@ export default function Header() {
     return (
         <header className={cl.header}>
             <div className={cl.wrapper}>
-                <div className={cl.title}>Divinecourse</div>
+                <div className={cl.title}><a href="#" className={cl.link}>Divinecourse</a></div>
                 <ul className={cl.list}>
                     <li className={cl.item}><a href="#about" className={cl.link}>О курсе</a></li>
                     <li className={cl.item}><a href="#learn" className={cl.link}>Чему научитесь</a></li>
