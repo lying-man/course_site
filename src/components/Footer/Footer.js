@@ -7,6 +7,9 @@ import Maestro from "../../assets/img/maestro.svg";
 import MasterCard from "../../assets/img/masterCard.svg";
 import Mir from "../../assets/img/mir.svg";
 import DesignImg from "../../assets/img/footerImg.svg";
+import policy from "../../assets/documents/policy.pdf";
+import oferta from "../../assets/documents/oferta.pdf";
+
 
 export default function Footer() {
     return (
@@ -55,8 +58,8 @@ export default function Footer() {
                 <div className={cl.bottom}>
                     <div className={cl.copy}>© 2023 Divinecourse</div>
                     <div className={cl.links}>
-                        <a href="#" target="_blank">Политика конфиденциальности</a>
-                        <a href="#" target="_blank">Договор оферты</a>
+                        <a href={policy} target="_blank">Политика конфиденциальности</a>
+                        <a href={oferta} target="_blank">Договор оферты</a>
                     </div>
                     <div className={cl.design}>
                         <div className={cl.text}>Разработка дизайна</div>

@@ -4,6 +4,7 @@ import CourseImg from "../../assets/img/course.png";
 import CalendarImg from "../../assets/img/calendar.svg";
 import Checkbox from "../../assets/img/checkbox.svg";
 import FormInput from './FormInput/FormInput';
+import policy from "../../assets/documents/policy.pdf";
 
 export default function Form() {
 
@@ -84,7 +85,7 @@ export default function Form() {
                             >
                                 <img src={Checkbox} alt="чекбокс" />
                             </button>
-                            <div className={cl.text}>Я даю согласие на <a href="#">обработку персональных данных</a></div>
+                            <div className={cl.text}>Я даю согласие на <a href={policy}>обработку персональных данных</a></div>
                         </div>
                         <button className={cl.send}>Записаться на курс</button>
                     </form>
