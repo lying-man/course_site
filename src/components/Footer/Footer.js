@@ -18,7 +18,7 @@ export default function Footer() {
                     <div className={cl.content}>
 
                         <div className={cl.info}>
-                            <a href="#">Divinecourse</a>
+                            <a className={cl.footerLogo} href="#">Divinecourse</a>
                             <div className={cl.name}>
                                 <div className={cl.dataName}><span>СЗ</span> Ильиных Александр Андреевич</div>
                                 <div className={cl.dataNumber}><span>ИНН</span> 662516262336</div>
@@ -26,7 +26,7 @@ export default function Footer() {
                             <div className={cl.contacts}>
                                 <a href="mailto:info@divinecourse.ru">info@divinecourse.ru</a>
                                 <div className={cl.social}>
-                                    <a href="#" target="_blank">
+                                    <a href="https://t.me/divinecoursehelp" target="_blank">
                                         <img src={TelegramImg} alt="Телеграм" />
                                     </a>
                                     <a href="#" target="_blank">
@@ -38,7 +38,9 @@ export default function Footer() {
 
                         <div className={cl.call}>
                             <div className={cl.text}>Пишите нам свои вопросы, комментарии и предложения</div>
-                            <a href="#" className={cl.link}>Связаться с нами</a>
+                            <a href="https://t.me/divinecoursehelp" className={cl.link}>
+                                Связаться с нами
+                            </a>
                         </div>
 
                     </div>
@@ -48,6 +50,16 @@ export default function Footer() {
                         <img src={Maestro} alt="maestro" />
                         <img src={Visa} alt="visa" />
                         <img src={Mir} alt="mir" />
+                    </div>
+
+                    <div className={cl.nameMobile}>
+                        <div><span>СЗ</span> Ильиных Александр Андреевич</div>
+                        <div><span>ИНН</span> 662516262336</div>
+                    </div>
+
+                    <div className={cl.deal}>
+                        <a href="#" target="_blank">Политика конфиденциальности</a>
+                        <a href="#" target="_blank">Договор оферты</a>
                     </div>
 
                 </div>

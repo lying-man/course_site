@@ -8,4 +8,23 @@ $black: #000;
 $white: #fff;
 $blackNum: #191919;
 $gray: #868686;
+
 $wrapperSize: 1200px;
+$maxWidth: 1440;
+$maxWidthMedia: 1440px;
+
+@mixin adaptiv-font($pcSize, $mobSize) {
+    $addSize: $pcSize - $mobSize;
+    $maxWidth: $maxWidth - 376;
+    font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 376px) / #{$maxWidth}));
+}
+
+@mixin adaptiv($prop, $newValue, $oldValue) {
+    #{$prop}: calc(#{$newValue + px} + #{$oldValue - $newValue} * ((100vw - 376px) / #{$maxWidth - 376}));
+}
+
+@mixin center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

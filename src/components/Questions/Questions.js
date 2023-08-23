@@ -69,6 +69,7 @@ export default function Questions() {
                 <div className={cl.action}>
                     <div className={cl.title}>Не нашли ответа на свой вопрос?</div>
                     <button className={cl.btn}>Задать свой вопрос</button>
+                    <button className={cl.btnMobile}>Вопросы? Задай их здесь</button>
                 </div>
             </div>
         </React.Fragment>

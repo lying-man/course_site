@@ -5,6 +5,10 @@
     width: 100%;
     pointer-events: none;
     background: transparent;
+
+    @media (max-width: $maxWidthMedia) {
+        @include adaptiv("height", 60, 149.57);
+    }
 }
 
 .wraper {
@@ -20,6 +24,13 @@
         font-style: normal;
         font-weight: 500;
         line-height: 110%;
+
+        @media (max-width: 768px) {
+            margin-bottom: 19px;
+            font-weight: 600;
+            font-size: 20px;
+            text-align: left;
+        }
     }
 
     .spoilers {
@@ -27,9 +38,24 @@
         margin-bottom: 50.53px;
         padding: 0px 25.26px;
 
+        @media (max-width: 768px) {
+            margin-bottom: 40px;
+            padding: 0px;
+        }
+
         .item {
             width: 100%;
             border-bottom: 1px solid #D2D2D2;
+
+            @media (max-width: 768px) {
+                background: $white;
+                border-bottom: none;
+                border-radius: 10px;
+
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+            }
 
             .content {
                 min-width: 100%;
@@ -40,6 +66,12 @@
                 align-items: flex-start;
                 padding: 31px 0px;
 
+                @media (max-width: 768px) {
+                    padding: 20px 15px;
+                    align-items: center;
+                    gap: 20px;
+                }
+
                 .title {
                     color: $blackNum;
                     font-size: 22px;
@@ -47,10 +79,15 @@
                     font-weight: 500;
                     line-height: 110%;
                     margin-bottom: 0px;
+
+                    @media (max-width: 768px) {
+                        font-size: 15px;
+                        text-align: left;
+                    }
                 }
 
                 .img {
-                    width: 26px;
+                    flex: 0 0 26px;
                     height: 26px;
                     border-radius: 50%;
                     background: $white;
@@ -60,6 +97,10 @@
                     border: none;
                     margin-bottom: 0px;
                     transition: all .2s ease;
+
+                    @media (max-width: 768px) {
+                        background: #F5F5F5;
+                    }
 
                     &.active {
                         transform: rotate(45deg);
@@ -86,8 +127,14 @@
                 box-sizing: content-box;
                 transition: all .3s ease;
 
+                @media (max-width: 768px) {
+                    font-size: 15px;
+                    padding: 0px 15px;
+                    max-width: calc(100% - 33px);
+                }
+
                 &.active {
-                    padding-bottom: 33px;
+                    padding-bottom: 16px;
                     transition: all .3s ease;
                 }
             }
@@ -100,6 +147,11 @@
         margin: 0 auto;
         text-align: center;
 
+        @media (max-width: 768px) {
+            max-width: 100%;
+            @include center();
+        }
+
         .title {
             text-align: center;
             margin-bottom: 18px;
@@ -108,6 +160,10 @@
             font-weight: 400;
             line-height: 140%;
             color: $blackNum;
+
+            @media (max-width: 768px) {
+                display: none;
+            }
         }
 
         .btn {
@@ -123,9 +179,31 @@
             border: none;
             transition: all .2s ease;
 
+            @media (max-width: 768px) {
+                display: none;
+            }
+
             &:hover {
                 background: lighten($blackNum, 10);
                 transition: all .2s ease;
+            }
+        }
+
+        .btnMobile {
+            padding: 18px 24px;
+            background: $blackNum;
+            color: $white;
+            border-radius: 9999px;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            display: none;
+            border: none;
+
+            @media (max-width: 768px) {
+                display: block;
+                flex: 0 1 320px;
             }
         }
     }

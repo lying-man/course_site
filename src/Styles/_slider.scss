@@ -1,0 +1,269 @@
+
+@import "_helpers.scss";
+
+.swiper {
+    @include center();
+    display: flex !important;
+
+    @media (max-width: 714px) {
+        display: block !important;
+    }
+
+    .swiper-wrapper {
+        display: inline-grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        width: auto;
+
+        @media (max-width: 1046px) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 14px;
+        }
+
+        @media (max-width: 714px) {
+            display: flex;
+            grid-gap: 0px;
+            grid-template-columns: none;
+            width: 100%;
+        }
+
+        @media (max-width: 376px) {
+            margin-left: -10px;
+        }
+
+        .swiper-slide {
+            border-radius: 10px;
+            overflow: hidden;
+            background: $white;
+            width: 320px;
+            height: 360px;
+
+            @media (max-width: 370px) {
+                height: auto;
+                padding-bottom: 20px;
+            }
+
+            .multiSlide {
+                height: 134px;
+                width: 100%;
+                @include center();
+                position: relative;
+                margin-bottom: 32.39px;
+
+                img {
+                    position: absolute;
+                    pointer-events: none;
+                    user-select: none;
+
+                    &:first-child {
+                        width: 157.101px;
+                        height: 133.829px;
+                        transform: translateX(-68px);
+                        top: -20px;
+                    }
+    
+                    &:nth-child(2) {
+                        width: 98.442px;
+                        height: 101.659px;
+                        z-index: 2;
+                    }
+    
+                    &:last-child {
+                        width: 64.636px;
+                        height: 64.636px;
+                        transform: translateX(33px);
+                        top: 15px;
+                    }
+                }
+            }
+
+            .screenSlide {
+                width: 289.859px;
+                height: 187px;
+                margin-left: auto;
+                margin-bottom: 20px;
+
+                @media (max-width: 714px) {
+                    margin: 0 auto;
+                    margin-bottom: 20px;
+                }
+
+                @media (max-width: 500px) {
+                    margin: 0px;
+                    margin-left: auto;
+                    margin-bottom: 20px;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .paperSlide {
+                width: 246.402px;
+                height: 156.416px;
+                margin: 0 auto;
+                margin-bottom: 6px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .laptopSlide {
+                width: 306px;
+                height: 150px;
+                margin: 0 auto;
+                margin-top: 12px;
+                margin-bottom: 16px;
+
+                @media (max-width: 420px) {
+                    width: 90%;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+
+            .schOneSlide {
+                width: 202px;
+                height: 168px;
+                margin: 0 auto;
+                margin-bottom: 19px;
+                margin-top: 25px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .schTwoSlide {
+                width: 242px;
+                height: 151px;
+                margin: 0 auto;
+                margin-top: 20px;
+                margin-bottom: 23px;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+
+            .slideTitle {
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 110%;
+                text-align: center;
+                max-width: 240px;
+                margin: 0 auto;
+                margin-bottom: 10px;
+                color: $blackNum;
+
+                @media (max-width: 370px) {
+                    font-size: 18px;
+                }
+            }
+
+            .slideText {
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 110%;
+                text-align: center;
+                color: $gray;
+                margin: 0 auto;
+
+                @media (max-width: 370px) {
+                    font-size: 12px;
+                }
+            }
+
+            &:first-child {
+                padding-top: 45px;
+                .slideText {
+                    max-width: 226px;
+                }
+            }
+
+            &:nth-child(2) {
+                .slideText {
+                    max-width: 288px;
+
+                    @media (max-width: 376px) {
+                        max-width: 270px;
+                    }
+
+                    @media (max-width: 370px) {
+                        max-width: 220px;
+                    }
+                }
+            }
+
+            &:nth-child(3) {
+                padding-top: 20px;
+                .slideText {
+                    max-width: 243px;
+                }
+            }
+
+            &:nth-child(4) {
+                .slideText {
+                    max-width: 288px;
+
+                    @media (max-width: 370px) {
+                        max-width: 220px;
+                    }
+                }
+            }
+
+            &:nth-child(5) {
+                .slideText {
+                    max-width: 245px;
+                }
+            }
+
+            &:nth-child(6) {
+                .slideText {
+                    max-width: 270px;
+
+                    @media (max-width: 370px) {
+                        max-width: 220px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.swiper-pagination {
+    gap: 12px;
+    display: none;
+    margin-top: 20px;
+
+    @media (max-width: 714px) {
+        @include center();
+    }
+
+    &-bullet {
+        width: 18px;
+        height: 18px;
+        background: transparent;
+        border-radius: 50%;
+        border: 3px solid $blackNum;
+        transition: all .2s ease;
+
+        &.swiper-pagination-bullet-active {
+            background: $blackNum;
+            transition: all .2s ease;
+        }
+    }
+}

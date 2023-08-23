@@ -5,6 +5,10 @@
     width: 100%;
     pointer-events: none;
     background: transparent;
+
+    @media (max-width: $maxWidthMedia) {
+        @include adaptiv("height", 60, 130.84);
+    }
 }
 
 .wrapper {
@@ -20,10 +24,38 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    gap: 20px;
+
+    @media (max-width: 874px) {
+        padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+        border: none;
+        border-radius: 0px;
+        background: transparent;
+        display: block;
+        padding: 0px;
+        border-radius: 0px;
+    }
 
     .price {
         flex: 0 1 494px;
-        overflow: hidden;
+        position: relative;
+
+        &:after {
+            content: "";
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: 10px;
+            left: 0;
+            bottom: -5px;
+            background: $white;
+            z-index: -1;
+
+            @media (max-width: 768px) { display: block; }
+        }
 
         .title {
             font-size: 35.714px;
@@ -32,6 +64,13 @@
             line-height: 100.5%;
             color: $blackNum;
             margin-bottom: 45.71px;
+
+            @media (max-width: 768px) {
+                font-size: 25px;
+                font-weight: 600;
+                margin-bottom: 30px;
+                text-align: center;
+            }
         }
 
         .content {
@@ -40,6 +79,11 @@
             width: 100%;
             border-radius: 7.143px;
             overflow: hidden;
+
+            @media (max-width: 768px) {
+                padding: 25px 16px;
+                border-radius: 10px;
+            }
 
             .title {
                 position: relative;
@@ -50,6 +94,12 @@
                 font-weight: 500;
                 line-height: 100%;
                 margin-bottom: 22.86px;
+
+                @media (max-width: 768px) {
+                    text-align: left;
+                    margin-bottom: 32px;
+                    font-size: 30px;
+                }
             }
 
             .price {
@@ -61,6 +111,17 @@
                 font-weight: 400;
                 line-height: 100.5%;
                 margin-bottom: 148px;
+
+                &:after {
+                    content: "";
+                    display: none;
+                }
+
+                @media (max-width: 768px) {
+                    font-size: 48px;
+                    font-weight: 500;
+                    margin-bottom: 141px;
+                }
             }
 
             .footer {
@@ -71,10 +132,19 @@
                 gap: 8.57px;
                 align-items: center;
 
+                @media (max-width: 768px) {
+                    gap: 12px;
+                }
+
                 img {
                     position: static;
                     width: 17px;
                     height: 17px;
+
+                    @media (max-width: 768px) {
+                        width: 24px;
+                        height: 24px;
+                    }
                 }
 
                 .text {
@@ -83,6 +153,10 @@
                     font-weight: 400;
                     line-height: 140%;
                     color: $white;
+
+                    @media (max-width: 768px) {
+                        font-size: 18px;
+                    }
                 }
             }
 
@@ -115,13 +189,28 @@
     }
 
     .divider {
-        width: 2px;
+        flex: 0 0 2px;
         background: #F5F5F5;
         align-self: stretch;
+
+        @media (max-width: 768px) { display: none; }
     }
 
     .form {
         flex: 0 1 494px;
+
+        @media (max-width: 768px) {
+            background: $white;
+            padding: 30px 10px;
+            padding-bottom: 42px;
+            border-radius: 0px 0px 10px 10px;
+        }
+
+        .form {
+            padding: 0px;
+            padding-bottom: 0px;
+            border-radius: 0px;
+        }
 
         .title {
             margin-bottom: 45.71px;
@@ -130,6 +219,10 @@
             font-weight: 500;
             line-height: 100.5%;
             color: $blackNum;
+
+            @media (max-width: 768px) {
+                display: none;
+            }
         }
 
         .block {
@@ -202,7 +295,7 @@
                 border: none;
                 background: 0;
                 border-radius: 0px;
-                width: 24px;
+                flex: 0 0 24px;
                 height: 24px;
                 position: relative;
                 display: flex;
@@ -242,6 +335,11 @@
                 font-weight: 400;
                 line-height: 140%;
 
+                @media (max-width: 768px) {
+                    font-size: 14px;
+                    max-width: 208px;
+                }
+
                 a {
                     color: #2F7EC0;
                     
@@ -264,6 +362,15 @@
             padding: 13px 10px;
             border: none;
             transition: all .2s ease;
+
+            @media (max-width: 768px) {
+                padding: 18px 10px;
+                display: block;
+                max-width: 300px;
+                min-width: auto;
+                width: 100%;
+                margin: 0 auto;
+            }
 
             &:hover {
                 background: lighten($blackNum, 10);

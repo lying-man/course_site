@@ -5,6 +5,10 @@
     width: 100%;
     pointer-events: none;
     background: transparent;
+
+    @media (max-width: $maxWidthMedia) {
+        @include adaptiv("height", 60, 150.43);
+    }
 }
 
 .wrapper {
@@ -15,6 +19,11 @@
     border-radius: 7.143px;
     background: $white;
 
+    @media (max-width: 768px) {
+        background: transparent;
+        padding: 0px;
+    }
+
     .title {
         font-size: 36px;
         font-style: normal;
@@ -22,19 +31,43 @@
         line-height: 110%;
         margin-bottom: 57.43px;
         color: $blackNum;
+
+        @media (max-width: 500px) {
+            margin-bottom: 40px;
+            font-size: 20px;
+            max-width: 146px;
+            font-weight: 600;
+        }
     }
 
     .wrapperContent {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        // gap: 66.43px;
         gap: 20px;
 
+        @media (max-width: 1096px) {
+            align-items: flex-start;
+        }
+
         .container {
-            flex: 0 1 604.286px;
+            flex: 0 0 604.286px;
             height: 365px;
             position: relative;
+
+            @media (max-width: 1096px) {
+                flex: 0 0 404.286px;
+                height: 244.185px;
+            }
+
+            @media (max-width: 869px) {
+                flex: 0 0 364.286px;
+                height: 220.010px;
+            }
+
+            @media (max-width: 768px) {
+                display: none;
+            }
 
             .computer {
                 position: absolute;
@@ -75,6 +108,14 @@
                     top: 0px;
                     left: 22.5px;
                     z-index: 1;
+
+                    @media (max-width: 768px) {
+                        background: $black;
+                    }
+
+                    @media (max-width: 500px) {
+                        left: 17px;
+                    }
                 }
 
                 .number {
@@ -88,13 +129,27 @@
                     align-items: center;
                     border-radius: 50%;
                     height: 45px;
-                    width: 45px;
+                    flex: 0 0 45px;
                     background: #F5F5F5;
                     position: relative;
                     z-index: 2;
+
+                    @media (max-width: 768px) {
+                        background: $black;
+                        color: $white;
+                    }
+
+                    @media (max-width: 500px) {
+                        flex: 0 0 34px;
+                        height: 34px;
+                    }
                 }
 
                 .content {
+
+                    @media (max-width: 500px) {
+                        padding-top: 6px;
+                    }
 
                     .title {
                         font-size: 22px;
@@ -103,6 +158,11 @@
                         line-height: 110%;
                         color: $blackNum;
                         margin-bottom: 9px;
+
+                        @media (max-width: 768px) {
+                            font-size: 20px;
+                            margin-bottom: 10px;
+                        }
                     }
 
                     .text {
@@ -111,6 +171,10 @@
                         font-style: normal;
                         font-weight: 400;
                         line-height: 110%;
+
+                        @media (max-width: 768px) {
+                            font-size: 15px;
+                        }
                     }
                 }
             }
