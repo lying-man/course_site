@@ -68,8 +68,8 @@ export default function Questions() {
                 </div>
                 <div className={cl.action}>
                     <div className={cl.title}>Не нашли ответа на свой вопрос?</div>
-                    <a href="https://t.me/divinecoursehelp" className={cl.btn}>Задать свой вопрос</a>
-                    <a href="https://t.me/divinecoursehelp" className={cl.btnMobile}>Вопросы? Задай их здесь</a>
+                    <a href="#" className={cl.btn}>Задать свой вопрос</a>
+                    <a href="#" className={cl.btnMobile}>Вопросы? Задай их здесь</a>
                 </div>
             </div>
         </React.Fragment>

@@ -7,8 +7,6 @@ import Maestro from "../../assets/img/maestro.svg";
 import MasterCard from "../../assets/img/masterCard.svg";
 import Mir from "../../assets/img/mir.svg";
 import DesignImg from "../../assets/img/footerImg.svg";
-import oferta from "../../assets/documents/oferta.pdf";
-import policy from "../../assets/documents/policy.pdf";
 
 export default function Footer() {
     return (
@@ -22,13 +20,13 @@ export default function Footer() {
                         <div className={cl.info}>
                             <a className={cl.footerLogo} href="#">Divinecourse</a>
                             <div className={cl.name}>
-                                <div className={cl.dataName}><span>СЗ</span> Ильиных Александр Андреевич</div>
-                                <div className={cl.dataNumber}><span>ИНН</span> 662516262336</div>
+                                <div className={cl.dataName}><span>СЗ</span> Карпатов Александр Андреевич</div>
+                                <div className={cl.dataNumber}><span>ИНН</span> 6625523423</div>
                             </div>
                             <div className={cl.contacts}>
-                                <a href="mailto:info@divinecourse.ru">info@divinecourse.ru</a>
+                                <a href="mailto:info@divinecours.ru">info@divinecourse.ru</a>
                                 <div className={cl.social}>
-                                    <a href="https://t.me/divinecoursehelp" target="_blank">
+                                    <a href="#" target="_blank">
                                         <img src={TelegramImg} alt="Телеграм" />
                                     </a>
                                     <a href="#" target="_blank">
@@ -40,7 +38,7 @@ export default function Footer() {
 
                         <div className={cl.call}>
                             <div className={cl.text}>Пишите нам свои вопросы, комментарии и предложения</div>
-                            <a href="https://t.me/divinecoursehelp" className={cl.link}>
+                            <a href="#" className={cl.link}>
                                 Связаться с нами
                             </a>
                         </div>
@@ -55,13 +53,13 @@ export default function Footer() {
                     </div>
 
                     <div className={cl.nameMobile}>
-                        <div><span>СЗ</span> Ильиных Александр Андреевич</div>
-                        <div><span>ИНН</span> 662516262336</div>
+                        <div><span>СЗ</span> Карпатов Александр Андреевич</div>
+                        <div><span>ИНН</span> 6625523423</div>
                     </div>
 
                     <div className={cl.deal}>
-                        <a href={policy} target="_blank">Политика конфиденциальности</a>
-                        <a href={oferta} target="_blank">Договор оферты</a>
+                        <a href="#" target="_blank">Политика конфиденциальности</a>
+                        <a href="#" target="_blank">Договор оферты</a>
                     </div>
 
                 </div>
@@ -69,8 +67,8 @@ export default function Footer() {
                 <div className={cl.bottom}>
                     <div className={cl.copy}>© 2023 Divinecourse</div>
                     <div className={cl.links}>
-                        <a href={policy} target="_blank">Политика конфиденциальности</a>
-                        <a href={oferta} target="_blank">Договор оферты</a>
+                        <a href="#" target="_blank">Политика конфиденциальности</a>
+                        <a href="#" target="_blank">Договор оферты</a>
                     </div>
                     <div className={cl.design}>
                         <div className={cl.text}>Разработка дизайна</div>

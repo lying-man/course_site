@@ -50,13 +50,13 @@ export default function Course() {
                     <div className={cl.container}>
                         <img src={PcFour} alt="computer" className={cl.computer} />
                         <iframe 
-                            className={cl.screen}
-                            src="https://www.youtube.com/embed/HBqReN6gfhc" 
-                            title="YouTube video player" 
+                            src="https://www.youtube.com/embed/HhvJFxM02GQ" 
+                            itle="YouTube video player" 
                             frameBorder="0" 
+                            className={cl.screen}
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                            allowFullScreen>
-                        </iframe>
+                            allowfullscreen
+                        ></iframe>
                     </div>
                 </div>
             </div>
